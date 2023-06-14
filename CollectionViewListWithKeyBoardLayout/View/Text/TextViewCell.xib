@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TextViewCell" customModule="CollectionViewListWithKeyBoardLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFD-Ww-t83">
+                        <rect key="frame" x="0.0" y="10" width="350" height="90"/>
+                        <color key="backgroundColor" red="0.75418893450000002" green="0.92706990980000004" blue="0.87074158570000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="vLy-Yo-30o"/>
+                        </constraints>
+                        <string key="text">Knock Knock. It's Me. Isn't The Icon Super Cool. Tried to Use KeyboardLayout. Idea Is When The KeyBoard appears It should not block the View. Feel Free to try It. Thanks. </string>
+                        <color key="textColor" red="0.44702400128865982" green="0.44702400128865982" blue="0.44702400128865982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="uFD-Ww-t83" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="HpJ-b1-CJJ"/>
+                <constraint firstAttribute="bottom" secondItem="uFD-Ww-t83" secondAttribute="bottom" constant="10" id="REd-ph-K6h"/>
+                <constraint firstAttribute="trailing" secondItem="uFD-Ww-t83" secondAttribute="trailing" id="t0P-80-Wra"/>
+                <constraint firstItem="uFD-Ww-t83" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uqj-eM-MCe"/>
+            </constraints>
+            <point key="canvasLocation" x="94" y="-11"/>
+        </collectionViewCell>
+    </objects>
+</document>
